@@ -33,5 +33,19 @@ console.log('trapezoidArea: ' + trapezoidArea(2, 4, 6))
 
 const cylinderVolume = (r, h) => circleArea(r) * h;
 console.log('cylinderVolume: ' + cylinderVolume(3, 7))
+
 // 숫자가 아니면 에러를 반환하도록 구현한다.
+
+function isNumber(num) {
+  return Number.isInteger(num) ? num : TypeError();
+}
+console.log('isNumber: ' + isNumber(3))
+console.log('isNumber: ' + isNumber('3'))
+
 // 인자의갯수가 부족하면 에러를 반환한다.
+
+function argumentsLength(para1, para2, para3) {
+  return arguments.length === 3 ? arguments.length : Error('need more parameter')
+}
+console.log('argumentsLength: ' + argumentsLength(1, 2, 3))
+console.log('argumentsLength: ' + argumentsLength(1, 2))
