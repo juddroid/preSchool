@@ -60,3 +60,14 @@
 - 설정 그대로 가져오기 성공
 - 이제서야 공식doc에서 설명하는대로 debugging모드가 작동이 됨
   - 그런데 insiders가 아닌 VSCode에서도 갑자기 작동이 됨
+- [x] **다시 도전**
+- breakpoint를 걸고, debugging 시도
+- F5를 눌렀더니 status bar의 색상이 변경되며 debugging 모드에 진입 성공
+- **npm express**를 설치하려는 과정에서 npm 명령어를 못알아듣는 문제 발생
+- 어제 이상하게 설치됐을 수도 있다고 생각했던 ubunto상의 npm, nodejs를 모두 삭제
+- 다시 설치
+- bash에서는 작동하고, zsh에서 작동하지 않았으므로 bash의 path 설정을 zshrc파일에 복사해줌
+  [npm command not found](https://likejirak.tistory.com/m/224)
+- [x] **끝없이 도전**
+- express, pug install 후 localhost:3000에서 작동 확인
+- 아직 어떻게 사용하는건지는 잘 모르겠음
