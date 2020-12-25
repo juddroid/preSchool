@@ -9,6 +9,17 @@ function infinitySum() {
 }
 console.log('infinitySum: ' + infinitySum(3, 5, 6));
 
+function infinitySum2(first, second, ...args) {
+  let arr = args;
+  console.log(args)
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log('infinitySum2: ' + infinitySum2(3, 5, 8, 25, 4, 2, 27, 4));
+
 
 // 반지름을 입력받아 원의 넓이를 계산하는 함수를 만든다.
 
