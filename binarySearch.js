@@ -21,6 +21,7 @@ function binarySearch(arr, num) {
     arr.splice(0, arr.length - parseInt(arr.length / 2));
     binarySearch(arr, num);
   }
+  // return console.error(`There is no exist ${num} in this array!`);
 }
 
 function test(testNum) {
