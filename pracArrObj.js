@@ -40,5 +40,3 @@ function getNumTypeData(dataObj) {
 }
 
 const numTypeData = getNumTypeData;
-
-console.log(numTypeData(data));
