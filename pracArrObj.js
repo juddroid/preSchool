@@ -25,18 +25,26 @@ const data = {
   },
 };
 
-function getNumTypeData(dataObj) {
-  let valueArr = Object.values(dataObj);
-  let keyArr = Object.keys(dataObj);
-  let realValArr = Object.values(valueArr);
+let arr = [];
 
-  let arr = [];
-  for (let i = 0; i < valueArr.length; i++) {
-    if (typeof valueArr[i] === 'number') {
-      arr.push(keyArr[i]);
-    }
+function objRecursive(obj) {
+  for (value in obj) {
+    typeCheck(value, obj[value]);
   }
   return arr;
 }
 
-const numTypeData = getNumTypeData;
+function typeCheck(key, val) {
+  if (typeof val === 'object') {
+    objRecursive(val);
+  }
+  if (typeof val === 'number') {
+    keyPush(key);
+  }
+}
+
+function keyPush(val) {
+  arr.push(val);
+}
+
+console.log(objRecursive(data));
