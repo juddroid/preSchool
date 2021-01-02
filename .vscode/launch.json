@@ -8,6 +8,7 @@
         "type": "node",
         "request": "launch",
         "name": "node",
+        "skipFiles": ["<node_internals>/**"],
         "program": "${workspaceFolder}/${relativeFile}"
       }
     ]
