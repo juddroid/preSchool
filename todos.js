@@ -59,3 +59,6 @@ const show = (obj, cmd) => {
 
 console.log(show(todos, 'status'));
 console.log(show(todos, 'list'));
+
+let arr = [1]
+arr.reduce()
