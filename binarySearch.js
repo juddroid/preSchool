@@ -30,7 +30,7 @@ function test(testNum) {
     searchCount = 0;
   }
 }
-console.log('test20');
+console.log('test21');
 test(100);
 // binarySearch(getNumArr(100), 2);
 // binarySearch(getNumArr(100), 4);
